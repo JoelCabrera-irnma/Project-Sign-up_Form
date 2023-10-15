@@ -1,0 +1,29 @@
+*{
+    border: 1px solid black ;
+}
+@font-face {
+    font-family: 'fontlogo';
+    src: url('./fonts/CAT_Constantia.ttf') format('woff2'), /* Formato WOFF2 */
+         url('ruta-a-tu-fuente/font.woff') format('woff'); /* Formato WOFF */
+    font-weight: normal; /* Peso de la fuente (normal, bold, etc.) */
+    font-style: normal; /* Estilo de la fuente (normal, italic, etc.) */
+  }
+  
+
+.content{
+    display: flex;
+}
+.sidebar{
+    font-family: fontlogo;
+    font-size: 2rem;
+    flex: 1.3;
+    background-image: url('./img/pexels-michael-block-3225517.jpg');
+    height: 30rem;
+    width: 100%;
+    background-size: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sideright{
+    flex: 3;
+}
