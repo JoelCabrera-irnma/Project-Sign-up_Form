@@ -1,6 +1,7 @@
-*{
+/* *{
     border: 1px solid black ;
 }
+ */
 @font-face {
     font-family: 'fontlogo';
     src: url('./fonts/CAT_Constantia.ttf') format('woff2'), /* Formato WOFF2 */
@@ -8,15 +9,19 @@
     font-weight: normal; /* Peso de la fuente (normal, bold, etc.) */
     font-style: normal; /* Estilo de la fuente (normal, italic, etc.) */
   }
-  
+@font-face {
+    font-family: 'fontpa';
+    src: url(fonts/Merienda-VariableFont_wght.ttf) format('woff');
+} 
 
 .content{
     display: flex;
 }
 .sidebar{
+    position: relative;
     font-family: fontlogo;
     font-size: 2rem;
-    flex: 1.3;
+    flex: 1.4;
     background-image: url('./img/pexels-michael-block-3225517.jpg');
     height: 30rem;
     width: 100%;
@@ -26,4 +31,64 @@
 }
 .sideright{
     flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.lion{
+    width: 4rem;
+    position: relative;
+    
+}
+
+.textLogo{
+    font-size: 1.6rem;
+}
+.logo{
+    position: relative;
+    top: 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.header{
+    flex: 1.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+.center{
+    flex: 1.9;
+    display: flex;
+    padding-left: 3rem;
+    justify-content: start;
+    gap: 5rem;
+    font-size: 0.6rem;
+}
+
+.footer{
+    flex: 1.9;
+
+}
+
+.pa1, .pa2{
+    font-family: fontpa;
+    font-size: 1.4ch;
+}
+
+.input{
+    width: 8rem;
+    height: 1rem;
+}
+
+.sLeft, .sRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
