@@ -17,26 +17,26 @@
                 <p class="pa2">Ayudanos a lograr esos objetivos!</p>
             </div>
             <p class="registro"> Registrese</p>
-            <div class="center">
+            <form id="formulario" class="center">
                 <div class="sLeft">
-                    <label for="name">NOMBRE</label>
-                   <input type="text" id="name" class="input" placeholder="Juan">
+                   <label for="name">NOMBRE</label>
+                   <input type="text" id="name" class="input" required placeholder="Juan">
                    <label for="">EMAIL</label>
-                   <input type="email" class="input" placeholder="juancruz@gmail.com">
+                   <input type="email" class="input" required placeholder="juancruz@gmail.com">
                    <label for="">PASSWORD</label>
-                   <input type="password" class="input">
+                   <input type="password" class="input" required placeholder="••••••••" pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                 </div>
                 <div class="sRight">
                     <label for="">APELLIDO</label>
-                    <input type="text" class="input" placeholder="Cruz">
+                    <input type="text" class="input" required placeholder="Cruz">
                     <label for="">CELULAR</label>
-                    <input type="tel" class="input" placeholder="387 6058934">
+                    <input type="tel" class="input" required placeholder="387 6058934">
                     <label for="">CONFIRMAR PASSWORD</label>
-                    <input type="text" class="input">
+                    <input type="text" class="input" required placeholder="••••••••" pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" >
                 </div>
-            </div>
+            </form>
             <div class="footer">
-                <button>Crear cuenta</button>
+                <form action=""><button type="submit" form="formulario">Crear cuenta</button></form>
                 <p>Ya tienes una cuenta? <a href="">Log in</a></p>
             </div>
         </div>
