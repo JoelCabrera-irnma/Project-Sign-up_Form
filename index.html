@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=d, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>ProjectSign-up</title>
 </head>
 <body>
     <div class="content">
@@ -21,23 +21,25 @@
                 <div class="sLeft">
                    <label for="name">NOMBRE</label>
                    <input type="text" id="name" class="input" required placeholder="Juan">
-                   <label for="">EMAIL</label>
-                   <input type="email" class="input" required placeholder="juancruz@gmail.com">
-                   <label for="">PASSWORD</label>
-                   <input type="password" class="input" required placeholder="••••••••" pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                   <label for="email">EMAIL</label>
+                   <input type="email" id="email" class="input" required placeholder="juancruz@gmail.com">
+                   <label for="password">PASSWORD</label>
+                   <input type="password" id="password" class="input" required placeholder="••••••••" pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                 </div>
                 <div class="sRight">
-                    <label for="">APELLIDO</label>
-                    <input type="text" class="input" required placeholder="Cruz">
-                    <label for="">CELULAR</label>
-                    <input type="tel" class="input" required placeholder="387 6058934">
-                    <label for="">CONFIRMAR PASSWORD</label>
-                    <input type="text" class="input" required placeholder="••••••••" pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" >
+                    <label for="surname">APELLIDO</label>
+                    <input type="text" id="surname" class="input" required placeholder="Cruz">
+                    <label for="celular">CELULAR</label>
+                    <input type="tel" id="celular" class="input" required placeholder="387 6058934">
+                    <label for="confirm">CONFIRMAR PASSWORD</label>
+                    <input type="text" id="confirm" class="input" required placeholder="••••••••" pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" >
                 </div>
             </form>
             <div class="footer">
-                <form action=""><button type="submit" form="formulario">Crear cuenta</button></form>
-                <p>Ya tienes una cuenta? <a href="">Log in</a></p>
+                <div>
+                    <button type="submit" form="formulario">Crear cuenta</button>
+                    <p>Ya tienes una cuenta? <a href="">Log in</a></p>
+                </div>
             </div>
         </div>
     </div>

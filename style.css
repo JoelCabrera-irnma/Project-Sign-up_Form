@@ -55,9 +55,10 @@ body{
 }
 
 .textLogo{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     letter-spacing: 2px;
     text-shadow: 2px 2px 3px #3d400f;
+    font-weight: 500;
 }
 .logo{
     position: relative;
@@ -89,7 +90,7 @@ body{
     justify-content: start;
     gap: 10rem;
     font-size: 0.7rem;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     
 }
 
@@ -97,7 +98,9 @@ body{
     flex: 1.9;
     padding-left: var(--pading-left);
     background-color: rgb(242, 237, 250);
-    padding-top: 1.2rem;
+   
+    display: flex;
+    align-items: center;
 }
 
 .pa1, .pa2{
@@ -111,6 +114,7 @@ input{
     height: 1.1rem;
     outline: none;
     border: none;
+    margin-bottom: 10px;
 }
 
 .sLeft, .sRight{
@@ -134,7 +138,7 @@ input::placeholder{
 }
 
 button{
-    --pad-top: 5px;
+    --pad-top: 4px;
     background-color: var(--color-but) ;
     padding: var(--pad-top) calc(var(--pad-top)*2);
     border: 1px solid  var(--color-but);
@@ -172,5 +176,16 @@ button:hover{
     background-color: rgba(172, 232, 172, 0.448) ;
 }
 
+.footer p{
+    font-size: 0.9rem;
+}
 
+.center label{
+    font-size: 0.7rem;
+    color: rgb(132, 41, 39);
+    margin-bottom: 3px;
+}
 
+.footer>div{
+
+}
